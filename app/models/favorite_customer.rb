@@ -1,0 +1,2 @@
+class FavoriteCustomer < ApplicationRecord
+end

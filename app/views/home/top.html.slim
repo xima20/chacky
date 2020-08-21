@@ -1,0 +1,22 @@
+= render 'layouts/header'
+.body
+  .mainbox
+  .row
+    .col-xs-6
+      .newsbox
+        .xxl お知らせ
+      .mypagebox
+        =link_to home_mypage_path do
+          .xxl.center マイページを表示        
+    .col-xs-6
+      .iventbox
+        .row
+          .col-xs-6
+            =link_to new_ivent_path do
+              .iventcreate
+                .xxl.center イベントを作成
+          .col-xs-6
+            =link_to ivents_path do
+              .ivententry
+                .xxl.center イベントに参加
+                

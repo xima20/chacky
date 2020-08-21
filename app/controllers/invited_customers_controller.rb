@@ -1,0 +1,2 @@
+class InvitedCustomersController < ApplicationController
+end

@@ -1,0 +1,36 @@
+
+= render partial: 'layouts/header'
+
+.body
+  .headbox
+  .row
+    .col-xs-7.col-xs-offset-1
+      .userinfo
+        .xxl ユーザー情報
+        .row
+          .col-xs-3
+            = attachment_image_tag(current_customer, :user_image, :fill, 80, 80, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg") 
+          .col-xs-9
+            label.xxl ユーザーID:
+            = current_customer.id
+            br/
+            = form_for(@customer, url: customers_path, method: :patch ) do |f|
+              label.xxl ニックネーム:
+              - if current_customer.nickname.blank?
+                = f.text_field :nickname, autofocus: true, class:"form-control", placeholder:"ニックネーム登録しよう"
+                = f.submit "登録", class:"btn btn-primary col-xs-12"
+              - else
+                =current_customer.nickname
+              br/
+              label.xxl 紹介文:
+              br/
+              = f.text_area :introduction, autofocus: true, class:"form-control", placeholder:"好きなお茶はなんですか？"
+              br/
+              = f.submit "更新", class:"btn btn-primary col-xs-12"
+      
+      .mypagebox
+        =link_to home_mypage_path do
+          .xxl.center マイページを表示        
+    .col-xs-3
+      .iventbox
+                

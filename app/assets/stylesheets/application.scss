@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+    @import "bootstrap-sprockets";
+    @import "bootstrap";
+
+    .mainbox {
+      width: 100%;
+      height: 400px;
+      background-color: red;
+   }
+    .newsbox {
+     width: 100%;
+     height: 350px;
+     background-color: blue;
+    }
+    .mypagebox {
+      width: 100%;
+      height: 100px;
+      background-color: green;
+   }
+   .iventbox {
+      width: 100%;
+      height: 450px;
+      background-color: orange;
+   }
+   .iventcreate {
+      width: 100%;
+      height: 250px;
+      background-color: green;
+      margin-top: 100px;
+   }
+   .ivententry {
+      width: 100%;
+      height: 250px;
+      background-color:green;
+      margin-top: 100px;
+   }
+   
+   .xxl{ 
+      font-size:xx-large;
+      background-color: white;
+   }
+   .center{
+      text-align: center;
+      // vertical-align: bottom;
+   }
+   .title{ 
+      font-size:xx-large;
+      color: white;
+   }
+
+  .headbox {
+      width: 100%;
+      height: 150px;
+      background-color: red;
+   }
+   .userinfo {
+      width: 100%;
+      height: 350px;
+      background-color: blue;
+     }

@@ -1,0 +1,14 @@
+nav.navbar-nav.navbar-left
+  .title Chacky
+- if  customer_signed_in?
+  nav
+    ul.nav.navbar-nav.navbar-right
+      li
+        = link_to "logout",  destroy_customer_session_path, method: :delete, class: "glyphicon glyphicon-log-out logout"
+- else
+   nav
+    ul.nav.navbar-nav.navbar-right
+      li
+        = link_to "Sign up", new_customer_registration_path, class: "glyphicon glyphicon-home home" 
+      li
+        = link_to "login", customer_session_path, class: "glyphicon glyphicon-home home"
